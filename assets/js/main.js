@@ -10,7 +10,7 @@ window.addEventListener("DOMContentLoaded", () => {
   initStrapi();
 
   function initStrapi() {
-    fetch("http://localhost:1337/api/works?populate=*")
+    fetch("https://alice-backend-oog7.onrender.com/api/works?populate=*")
       .then((response) => response.json())
       .then((data) => {
         console.log("Полученные данные:", data);
