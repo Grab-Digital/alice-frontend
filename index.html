@@ -1,414 +1,696 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
     <title>Портфолио Батурова Алиса</title>
-    <link rel="stylesheet" href="./assets/css/libs/aos.min.css">
-    <link rel="stylesheet" href="./assets/css/libs/fancybox.min.css">
-    <link rel="stylesheet" href="./assets/css/libs/swiper.min.css">
-    <link rel="stylesheet" href="./assets/css/libs/aos.min.css">
-    <link rel="stylesheet" href="./assets/css/main.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./assets/css/libs/aos.min.css" />
+    <link rel="stylesheet" href="./assets/css/libs/fancybox.min.css" />
+    <link rel="stylesheet" href="./assets/css/libs/swiper.min.css" />
+    <link rel="stylesheet" href="./assets/css/libs/aos.min.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
     <header class="header" data-aos="fade-down" data-aos-duration="1000">
-        <div class="container">
-            <div class="header__social">
-                <a class="header__social-item" href="https://www.tg.com/">
-                    <!-- <img src="./assets/img/svg/tg.svg" alt=""> -->
-                     <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_421_9002)">
-                        <path class="first-path" fill-rule="evenodd" clip-rule="evenodd" d="M15 0C6.71602 0 0 6.71602 0 15C0 23.284 6.71602 30 15 30C23.284 30 30 23.284 30 15C30 6.71602 23.284 0 15 0ZM21.9527 10.2012C21.7271 12.573 20.7504 18.3287 20.2535 20.9854C20.0432 22.1098 19.6289 22.4865 19.2281 22.5234C18.3574 22.6037 17.6959 21.9475 16.8521 21.3943C15.532 20.5289 14.7861 19.9904 13.5047 19.1461C12.0234 18.1699 12.9838 17.6338 13.8275 16.7572C14.0484 16.5275 17.8863 13.0365 17.9607 12.7201C17.9701 12.6803 17.9789 12.5326 17.891 12.4547C17.8031 12.3768 17.6736 12.4037 17.5805 12.4248C17.448 12.4547 15.3387 13.8486 11.2535 16.6066C10.6547 17.018 10.1127 17.2178 9.62637 17.2078C9.09082 17.1961 8.06074 16.9049 7.29492 16.6559C6.35566 16.3506 5.60918 16.1889 5.67422 15.6703C5.70762 15.4002 6.07969 15.1242 6.78984 14.8418C11.1627 12.9363 14.0783 11.6807 15.5373 11.0736C19.7033 9.34107 20.5688 9.03984 21.1329 9.02988C21.8397 9.0174 22.0103 9.60076 21.9527 10.2012Z" fill="#DEDEDE"/>
-                        </g>
-                        <defs>
-                        <clipPath id="clip0_421_9002">
-                        <rect width="30" height="30" fill="white"/>
-                        </clipPath>
-                        </defs>
-                    </svg>
-                </a>
-                <a class="header__social-item" href="https://www.wp.com/">
-                    <!-- <img src="./assets/img/svg/wp.svg" alt=""> -->
-                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_421_9013)">
-                        <path class="first-path" d="M23.6031 0H6.39844C2.86468 0 0 2.86468 0 6.39844V23.6031C0 27.1368 2.86468 30.0015 6.39844 30.0015H23.6031C27.1368 30.0015 30.0015 27.1368 30.0015 23.6031V6.39844C30.0015 2.86468 27.1368 0 23.6031 0Z" fill="#DEDEDE"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.5738 6.22112C9.93127 6.44191 6.26794 10.3083 6.28187 14.9558C6.28625 16.3711 6.6279 17.7075 7.23097 18.8881L6.30543 23.3808C6.25516 23.624 6.47448 23.8369 6.71589 23.7797L11.1182 22.7368C12.2492 23.3001 13.5199 23.6254 14.8644 23.6461C19.6092 23.7184 23.5657 19.9511 23.7139 15.2077C23.8722 10.1232 19.6757 5.97793 14.5738 6.22112ZM19.8268 19.7559C18.5375 21.0451 16.8232 21.7552 15.0001 21.7552C13.9324 21.7552 12.9101 21.5155 11.9616 21.0431L11.3489 20.7378L8.64954 21.3772L9.21751 18.6191L8.91562 18.0277C8.42322 17.0634 8.17372 16.0208 8.17372 14.9288C8.17372 13.1052 8.88373 11.3913 10.173 10.1017C11.4506 8.82409 13.1928 8.10247 15.0001 8.10247C16.8233 8.10247 18.5376 8.81272 19.8268 10.1017C21.1161 11.391 21.8261 13.1053 21.8261 14.9285C21.8264 16.7358 21.1048 18.4779 19.8268 19.7559Z" fill="#242323"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M19.2309 16.8194L17.5422 16.3345C17.3203 16.271 17.0812 16.3339 16.9194 16.4987L16.5066 16.9193C16.3323 17.0968 16.0682 17.1538 15.8378 17.0606C15.0389 16.7375 13.3584 15.2431 12.9296 14.4959C12.8055 14.2804 12.8261 14.0111 12.9781 13.8141L13.3386 13.3478C13.4798 13.1651 13.5094 12.9196 13.4162 12.7084L12.7059 11.1013C12.5357 10.7167 12.0438 10.6046 11.7225 10.8762C11.2514 11.2751 10.6921 11.8805 10.6241 12.5516C10.5042 13.7348 11.0116 15.2263 12.9302 17.0173C15.147 19.0862 16.9221 19.3597 18.078 19.0796C18.7337 18.9209 19.2574 18.2845 19.588 17.7633C19.8134 17.4074 19.6354 16.9356 19.2309 16.8194Z" fill="#242323"/>
-                        </g>
-                        <defs>
-                        <clipPath id="clip0_421_9013">
-                        <rect width="30" height="30" fill="white"/>
-                        </clipPath>
-                        </defs>
-                    </svg>
-                </a>
-                <a class="header__social-item" href="https://www.vk.com/">
-                    <!-- <img src="./assets/img/svg/vk.svg" alt=""> -->
-                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_422_9020)">
-                        <path class="first-path" d="M27.8947 2.10527C25.7895 0 22.4016 0 15.6252 0H14.3748C7.59844 0 4.21055 0 2.10527 2.10527C0 4.21055 0 7.59844 0 14.3748V15.6252C0 22.4016 0 25.7895 2.10527 27.8947C4.21055 30 7.59844 30 14.3748 30H15.6252C22.4016 30 25.7895 30 27.8947 27.8947C30 25.7895 30 22.4016 30 15.6252V14.3748C30 7.59844 30 4.21055 27.8947 2.10527ZM24.3791 21.2502H22.1912C21.3568 21.2502 21.1125 20.5846 19.6289 19.1016C18.3305 17.85 17.7744 17.6877 17.4498 17.6877C17.0092 17.6877 16.8773 17.8125 16.8773 18.4377V20.3994C16.8773 20.9373 16.7057 21.2502 15.3146 21.2502C12.9967 21.2502 10.449 19.8428 8.64141 17.2477C5.9291 13.4467 5.1873 10.5732 5.1873 9.99375C5.1873 9.66914 5.3127 9.375 5.9373 9.375H8.12578C8.68476 9.375 8.89512 9.61992 9.10488 10.2252C10.1748 13.3418 11.9795 16.0658 12.7213 16.0658C12.999 16.0658 13.1268 15.9375 13.1268 15.2314V12.01C13.0453 10.527 12.2572 10.4051 12.2572 9.87773C12.2572 9.6334 12.4664 9.375 12.8139 9.375H16.2521C16.7162 9.375 16.8773 9.62285 16.8773 10.1789V14.5131C16.8773 14.976 17.0789 15.1383 17.2178 15.1383C17.4961 15.1383 17.7281 14.976 18.2379 14.4662C19.8141 12.7049 20.9268 9.99375 20.9268 9.99375C21.0662 9.66914 21.3223 9.375 21.8789 9.375H24.0668C24.7283 9.375 24.8678 9.71543 24.7283 10.1789C24.45 11.4539 21.7846 15.208 21.7846 15.208C21.5525 15.5789 21.46 15.7641 21.7846 16.1812C22.0166 16.5059 22.7812 17.1545 23.291 17.7574C24.2309 18.8145 24.9393 19.7062 25.1367 20.3209C25.3172 20.9373 25.0043 21.2502 24.3791 21.2502Z" fill="#DEDEDE"/>
-                        </g>
-                        <defs>
-                        <clipPath id="clip0_422_9020">
-                        <rect width="30" height="30" fill="white"/>
-                        </clipPath>
-                        </defs>
-                    </svg>
-
-                </a>
-                <a class="header__social-item" href="https://www.beehance.com/">
-                    <!-- <img src="./assets/img/svg/behance.svg" alt=""> -->
-                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_421_9006)">
-                        <path class="first-path" d="M24.375 0H5.625C4.13449 0.00432842 2.70626 0.598351 1.65231 1.65231C0.598351 2.70626 0.00432842 4.13449 0 5.625L0 24.375C0.00432842 25.8655 0.598351 27.2937 1.65231 28.3477C2.70626 29.4016 4.13449 29.9957 5.625 30H24.375C25.8655 29.9957 27.2937 29.4016 28.3477 28.3477C29.4016 27.2937 29.9957 25.8655 30 24.375V5.625C29.9957 4.13449 29.4016 2.70626 28.3477 1.65231C27.2937 0.598351 25.8655 0.00432842 24.375 0Z" fill="#DEDEDE"/>
-                        <path d="M13.3594 14.7656C13.3594 14.7656 14.7656 14.243 14.7656 12.4219C14.7656 10.6008 13.5609 9.84375 11.9531 9.84375H6.5625V20.1562H11.9531C11.9531 20.1562 15 20.1562 15 17.1094C15 17.1094 15 14.7656 13.3594 14.7656ZM8.90625 11.7188H11.9531C11.9531 11.7188 12.6562 11.7188 12.6562 12.6562C12.6562 13.7156 12.1875 13.8281 11.7188 13.8281H8.90625V11.7188ZM11.7188 18.2812H8.90625V15.7031L11.857 15.6867C11.857 15.6867 12.8906 15.7031 12.8906 17.1094C12.8906 18.2812 12.143 18.2695 11.7188 18.2812Z" fill="#242323"/>
-                        <path d="M19.868 12.3937C15.9562 12.3937 15.9586 16.3031 15.9586 16.3031C15.9586 16.3031 15.743 20.1562 19.9219 20.1562C19.9219 20.1562 23.4375 20.482 23.4375 17.5781H21.5625C21.5625 17.5781 21.6187 18.5812 19.9219 18.5812C19.9219 18.5812 18.0469 18.7664 18.0469 16.875H23.4375C23.4375 16.875 23.9859 12.3937 19.868 12.3937ZM21.5625 15.4687H18.0469C18.0469 15.4687 18.3375 13.8844 19.9078 13.8844C21.4781 13.8844 21.5625 15.4687 21.5625 15.4687Z" fill="#242323"/>
-                        <path d="M17.5781 10.3125H22.0312V11.7188H17.5781V10.3125Z" fill="#242323"/>
-                        </g>
-                        <defs>
-                        <clipPath id="clip0_421_9006">
-                        <rect width="30" height="30" fill="white"/>
-                        </clipPath>
-                        </defs>
-                    </svg>
-                </a>
-            </div>
-            <button data-fancybox="" data-src="#modal-get-offer" class="header__btn">
-                Связаться
-            </button>
+      <div class="container">
+        <div class="header__social">
+          <a class="header__social-item" href="https://www.tg.com/">
+            <!-- <img src="./assets/img/svg/tg.svg" alt=""> -->
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 30 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_421_9002)">
+                <path
+                  class="first-path"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M15 0C6.71602 0 0 6.71602 0 15C0 23.284 6.71602 30 15 30C23.284 30 30 23.284 30 15C30 6.71602 23.284 0 15 0ZM21.9527 10.2012C21.7271 12.573 20.7504 18.3287 20.2535 20.9854C20.0432 22.1098 19.6289 22.4865 19.2281 22.5234C18.3574 22.6037 17.6959 21.9475 16.8521 21.3943C15.532 20.5289 14.7861 19.9904 13.5047 19.1461C12.0234 18.1699 12.9838 17.6338 13.8275 16.7572C14.0484 16.5275 17.8863 13.0365 17.9607 12.7201C17.9701 12.6803 17.9789 12.5326 17.891 12.4547C17.8031 12.3768 17.6736 12.4037 17.5805 12.4248C17.448 12.4547 15.3387 13.8486 11.2535 16.6066C10.6547 17.018 10.1127 17.2178 9.62637 17.2078C9.09082 17.1961 8.06074 16.9049 7.29492 16.6559C6.35566 16.3506 5.60918 16.1889 5.67422 15.6703C5.70762 15.4002 6.07969 15.1242 6.78984 14.8418C11.1627 12.9363 14.0783 11.6807 15.5373 11.0736C19.7033 9.34107 20.5688 9.03984 21.1329 9.02988C21.8397 9.0174 22.0103 9.60076 21.9527 10.2012Z"
+                  fill="#DEDEDE"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_421_9002">
+                  <rect width="30" height="30" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+          <a class="header__social-item" href="https://www.wp.com/">
+            <!-- <img src="./assets/img/svg/wp.svg" alt=""> -->
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 30 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_421_9013)">
+                <path
+                  class="first-path"
+                  d="M23.6031 0H6.39844C2.86468 0 0 2.86468 0 6.39844V23.6031C0 27.1368 2.86468 30.0015 6.39844 30.0015H23.6031C27.1368 30.0015 30.0015 27.1368 30.0015 23.6031V6.39844C30.0015 2.86468 27.1368 0 23.6031 0Z"
+                  fill="#DEDEDE"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M14.5738 6.22112C9.93127 6.44191 6.26794 10.3083 6.28187 14.9558C6.28625 16.3711 6.6279 17.7075 7.23097 18.8881L6.30543 23.3808C6.25516 23.624 6.47448 23.8369 6.71589 23.7797L11.1182 22.7368C12.2492 23.3001 13.5199 23.6254 14.8644 23.6461C19.6092 23.7184 23.5657 19.9511 23.7139 15.2077C23.8722 10.1232 19.6757 5.97793 14.5738 6.22112ZM19.8268 19.7559C18.5375 21.0451 16.8232 21.7552 15.0001 21.7552C13.9324 21.7552 12.9101 21.5155 11.9616 21.0431L11.3489 20.7378L8.64954 21.3772L9.21751 18.6191L8.91562 18.0277C8.42322 17.0634 8.17372 16.0208 8.17372 14.9288C8.17372 13.1052 8.88373 11.3913 10.173 10.1017C11.4506 8.82409 13.1928 8.10247 15.0001 8.10247C16.8233 8.10247 18.5376 8.81272 19.8268 10.1017C21.1161 11.391 21.8261 13.1053 21.8261 14.9285C21.8264 16.7358 21.1048 18.4779 19.8268 19.7559Z"
+                  fill="#242323"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M19.2309 16.8194L17.5422 16.3345C17.3203 16.271 17.0812 16.3339 16.9194 16.4987L16.5066 16.9193C16.3323 17.0968 16.0682 17.1538 15.8378 17.0606C15.0389 16.7375 13.3584 15.2431 12.9296 14.4959C12.8055 14.2804 12.8261 14.0111 12.9781 13.8141L13.3386 13.3478C13.4798 13.1651 13.5094 12.9196 13.4162 12.7084L12.7059 11.1013C12.5357 10.7167 12.0438 10.6046 11.7225 10.8762C11.2514 11.2751 10.6921 11.8805 10.6241 12.5516C10.5042 13.7348 11.0116 15.2263 12.9302 17.0173C15.147 19.0862 16.9221 19.3597 18.078 19.0796C18.7337 18.9209 19.2574 18.2845 19.588 17.7633C19.8134 17.4074 19.6354 16.9356 19.2309 16.8194Z"
+                  fill="#242323"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_421_9013">
+                  <rect width="30" height="30" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+          <a class="header__social-item" href="https://www.vk.com/">
+            <!-- <img src="./assets/img/svg/vk.svg" alt=""> -->
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 30 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_422_9020)">
+                <path
+                  class="first-path"
+                  d="M27.8947 2.10527C25.7895 0 22.4016 0 15.6252 0H14.3748C7.59844 0 4.21055 0 2.10527 2.10527C0 4.21055 0 7.59844 0 14.3748V15.6252C0 22.4016 0 25.7895 2.10527 27.8947C4.21055 30 7.59844 30 14.3748 30H15.6252C22.4016 30 25.7895 30 27.8947 27.8947C30 25.7895 30 22.4016 30 15.6252V14.3748C30 7.59844 30 4.21055 27.8947 2.10527ZM24.3791 21.2502H22.1912C21.3568 21.2502 21.1125 20.5846 19.6289 19.1016C18.3305 17.85 17.7744 17.6877 17.4498 17.6877C17.0092 17.6877 16.8773 17.8125 16.8773 18.4377V20.3994C16.8773 20.9373 16.7057 21.2502 15.3146 21.2502C12.9967 21.2502 10.449 19.8428 8.64141 17.2477C5.9291 13.4467 5.1873 10.5732 5.1873 9.99375C5.1873 9.66914 5.3127 9.375 5.9373 9.375H8.12578C8.68476 9.375 8.89512 9.61992 9.10488 10.2252C10.1748 13.3418 11.9795 16.0658 12.7213 16.0658C12.999 16.0658 13.1268 15.9375 13.1268 15.2314V12.01C13.0453 10.527 12.2572 10.4051 12.2572 9.87773C12.2572 9.6334 12.4664 9.375 12.8139 9.375H16.2521C16.7162 9.375 16.8773 9.62285 16.8773 10.1789V14.5131C16.8773 14.976 17.0789 15.1383 17.2178 15.1383C17.4961 15.1383 17.7281 14.976 18.2379 14.4662C19.8141 12.7049 20.9268 9.99375 20.9268 9.99375C21.0662 9.66914 21.3223 9.375 21.8789 9.375H24.0668C24.7283 9.375 24.8678 9.71543 24.7283 10.1789C24.45 11.4539 21.7846 15.208 21.7846 15.208C21.5525 15.5789 21.46 15.7641 21.7846 16.1812C22.0166 16.5059 22.7812 17.1545 23.291 17.7574C24.2309 18.8145 24.9393 19.7062 25.1367 20.3209C25.3172 20.9373 25.0043 21.2502 24.3791 21.2502Z"
+                  fill="#DEDEDE"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_422_9020">
+                  <rect width="30" height="30" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+          <a class="header__social-item" href="https://www.beehance.com/">
+            <!-- <img src="./assets/img/svg/behance.svg" alt=""> -->
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 30 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_421_9006)">
+                <path
+                  class="first-path"
+                  d="M24.375 0H5.625C4.13449 0.00432842 2.70626 0.598351 1.65231 1.65231C0.598351 2.70626 0.00432842 4.13449 0 5.625L0 24.375C0.00432842 25.8655 0.598351 27.2937 1.65231 28.3477C2.70626 29.4016 4.13449 29.9957 5.625 30H24.375C25.8655 29.9957 27.2937 29.4016 28.3477 28.3477C29.4016 27.2937 29.9957 25.8655 30 24.375V5.625C29.9957 4.13449 29.4016 2.70626 28.3477 1.65231C27.2937 0.598351 25.8655 0.00432842 24.375 0Z"
+                  fill="#DEDEDE"
+                />
+                <path
+                  d="M13.3594 14.7656C13.3594 14.7656 14.7656 14.243 14.7656 12.4219C14.7656 10.6008 13.5609 9.84375 11.9531 9.84375H6.5625V20.1562H11.9531C11.9531 20.1562 15 20.1562 15 17.1094C15 17.1094 15 14.7656 13.3594 14.7656ZM8.90625 11.7188H11.9531C11.9531 11.7188 12.6562 11.7188 12.6562 12.6562C12.6562 13.7156 12.1875 13.8281 11.7188 13.8281H8.90625V11.7188ZM11.7188 18.2812H8.90625V15.7031L11.857 15.6867C11.857 15.6867 12.8906 15.7031 12.8906 17.1094C12.8906 18.2812 12.143 18.2695 11.7188 18.2812Z"
+                  fill="#242323"
+                />
+                <path
+                  d="M19.868 12.3937C15.9562 12.3937 15.9586 16.3031 15.9586 16.3031C15.9586 16.3031 15.743 20.1562 19.9219 20.1562C19.9219 20.1562 23.4375 20.482 23.4375 17.5781H21.5625C21.5625 17.5781 21.6187 18.5812 19.9219 18.5812C19.9219 18.5812 18.0469 18.7664 18.0469 16.875H23.4375C23.4375 16.875 23.9859 12.3937 19.868 12.3937ZM21.5625 15.4687H18.0469C18.0469 15.4687 18.3375 13.8844 19.9078 13.8844C21.4781 13.8844 21.5625 15.4687 21.5625 15.4687Z"
+                  fill="#242323"
+                />
+                <path
+                  d="M17.5781 10.3125H22.0312V11.7188H17.5781V10.3125Z"
+                  fill="#242323"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_421_9006">
+                  <rect width="30" height="30" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
         </div>
+        <button data-fancybox="" data-src="#modal-get-offer" class="header__btn">
+          Связаться
+        </button>
+      </div>
     </header>
     <main>
-        <section class="home">
-            <div class="container">
-                <div class="home__title-wrapper">
-                    <h2 class="home__title" data-aos="fade-up" data-aos-duration="1000">Fullstack-designer & GRAPHIC DESIGNER</h2>
-                    <h1 class="home__name desk__hide" data-aos="fade-up" data-aos-duration="1000">Baturova</h1>
-                    <div class="home__img-wrapper">
-                        <img class="home__img" src="./assets/img/home-img.png" alt="">
-                        <div class="home__img-inner">
-                            <h1 class="home__subname desk__hide" data-aos="fade-up" data-aos-duration="2000">alisa</h1>
-                            <span class="home__benefits-about desk__hide" data-aos="fade-up" data-aos-duration="2000">
-                                Cоздаю визуальную огранку <br class="mob__hide">
-                                для ваших проектов с полным <br class="mob__hide">
-                                погружением в них
-                            </span>
-                        </div>
-                    </div>
-                    <h1 class="home__name mob__hide" data-aos="fade-up" data-aos-duration="2000">Baturova</h1>
-                    <h1 class="home__subname mob__hide" data-aos="fade-up" data-aos-duration="3000">alisa</h1>
-                </div>
-                <div class="home__benefits">
-                    <div class="home__benefits-contacts mob__hide" data-aos="fade-down" data-aos-duration="1000">
-                        <div class="home__benefits-contacts-item">
-                            <span>Telegram</span> <span>@baturovaa</span>
-                        </div> 
-                        <div class="home__benefits-contacts-item">
-                            <span>Behance</span> <span>alicedunn</span>
-                        </div> 
-                        <div class="home__benefits-contacts-item">
-                            <span>Нельзяграм</span> <span>@swgxzx</span>
-                        </div> 
-                    </div>
-                    <div class="home__benefits-pages" data-aos="fade-down" data-aos-duration="1000">
-                        <span class="home__benefits-pages-item">Корпоративные сайты</span>
-                        <span class="home__benefits-pages-item">Landing page</span>
-                        <span class="home__benefits-pages-item">Pos-материалы</span>
-                    </div>
-                    <span class="home__benefits-about mob__hide" data-aos="fade-down" data-aos-duration="1000">
-                        Cоздаю визуальную огранку <br>
-                        для ваших проектов с полным <br>
-                        погружением в них
-                    </span>
-                </div>
+      <section class="home">
+        <div class="container">
+          <div class="home__title-wrapper">
+            <h2 class="home__title" data-aos="fade-up" data-aos-duration="1000">
+              Fullstack-designer & GRAPHIC DESIGNER
+            </h2>
+            <h1 class="home__name desk__hide" data-aos="fade-up" data-aos-duration="1000">
+              Baturova
+            </h1>
+            <div class="home__img-wrapper">
+              <img class="home__img" src="./assets/img/home-img.png" alt="" />
+              <div class="home__img-inner">
+                <h1
+                  class="home__subname desk__hide"
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
+                >
+                  alisa
+                </h1>
+                <span
+                  class="home__benefits-about desk__hide"
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
+                >
+                  Cоздаю визуальную огранку <br class="mob__hide" />
+                  для ваших проектов с полным <br class="mob__hide" />
+                  погружением в них
+                </span>
+              </div>
             </div>
-        </section>
-        <section class="profits">
-            <div class="container">
-                <h1 class="profits__title" data-aos="fade-left" data-aos-duration="1000">Почему работать со мной <br class="mob__hide"> это выгодно?</h1>
-                <div class="profits__list swiper" data-aos="fade-down" data-aos-duration="1000">
-                    <div class="swiper-wrapper">
-                        <div class="profits__list-item swiper-slide">
-                            <span class="profits__list-item-title">Аналитический <br> подход к задаче </span>
-                            <span class="profits__list-item-text">Перед началом работы <br>я провожу анализ рынка</span>
-                            <div class="profits__list-item-ball"></div>
-                        </div>
-                        <div class="profits__list-item">
-                        </div>
-                        <div class="profits__list-item swiper-slide">
-                            <span class="profits__list-item-title">Скорость <br>и надежность </span>
-                            <span class="profits__list-item-text">Соблюдаю сроки, а после сдачи проекта <br>обеспечиваю поддержку и консультации.</span>
-                            <div class="profits__list-item-ball"></div>
-                        </div>
-                        <div class="profits__list-item swiper-slide">
-                            <span class="profits__list-item-title">Экономия времени <br>и денег </span>
-                            <span class="profits__list-item-text">Предлагаю продуманные решения <br>без лишних затрат, помогаю избежать <br>ошибок на этапе разработки</span>
-                            <div class="profits__list-item-ball"></div>
-                        </div>
-                        <div class="profits__list-item swiper-slide">
-                            <span class="profits__list-item-title">Разработка </span>
-                            <span class="profits__list-item-text">Которая приведет компанию <br>к поставленным целям</span>
-                            <div class="profits__list-item-ball"></div>
-                        </div>
-                        <div class="profits__list-item swiper-slide">
-                            <span class="profits__list-item-title">Комплексный <br>подход</span>
-                            <span class="profits__list-item-text">Я предлагаю лучшие варианты <br>для своих клиентов</span>
-                            <div class="profits__list-item-ball"></div>
-                        </div>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
+            <h1 class="home__name mob__hide" data-aos="fade-up" data-aos-duration="2000">
+              Baturova
+            </h1>
+            <h1
+              class="home__subname mob__hide"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            >
+              alisa
+            </h1>
+          </div>
+          <div class="home__benefits">
+            <div
+              class="home__benefits-contacts mob__hide"
+              data-aos="fade-down"
+              data-aos-duration="1000"
+            >
+              <div class="home__benefits-contacts-item">
+                <span>Telegram</span> <span>@baturovaa</span>
+              </div>
+              <div class="home__benefits-contacts-item">
+                <span>Behance</span> <span>alicedunn</span>
+              </div>
+              <div class="home__benefits-contacts-item">
+                <span>Нельзяграм</span> <span>@swgxzx</span>
+              </div>
             </div>
-        </section>
-        <section class="photos">
-            <div class="photos__wrapper">
-                <img class="photos__img mob__hide" data-aos="fade-up" data-aos-duration="1000" src="./assets/img/photos-bg.png" alt="">
-                <img class="photos__img desk__hide" data-aos="fade-up" data-aos-duration="1000" src="./assets/img/photos-bg-mob.png" alt="">
-                <!-- <img class="photos__img" src="/assets/img/photos-1.png" alt="">
+            <div
+              class="home__benefits-pages"
+              data-aos="fade-down"
+              data-aos-duration="1000"
+            >
+              <span class="home__benefits-pages-item">Корпоративные сайты</span>
+              <span class="home__benefits-pages-item">Landing page</span>
+              <span class="home__benefits-pages-item">Pos-материалы</span>
+            </div>
+            <span
+              class="home__benefits-about mob__hide"
+              data-aos="fade-down"
+              data-aos-duration="1000"
+            >
+              Cоздаю визуальную огранку <br />
+              для ваших проектов с полным <br />
+              погружением в них
+            </span>
+          </div>
+        </div>
+      </section>
+      <section class="profits">
+        <div class="container">
+          <h1 class="profits__title" data-aos="fade-left" data-aos-duration="1000">
+            Почему работать со мной <br class="mob__hide" />
+            это выгодно?
+          </h1>
+          <div class="profits__list swiper" data-aos="fade-down" data-aos-duration="1000">
+            <div class="swiper-wrapper">
+              <div class="profits__list-item swiper-slide">
+                <span class="profits__list-item-title"
+                  >Аналитический <br />
+                  подход к задаче
+                </span>
+                <span class="profits__list-item-text"
+                  >Перед началом работы <br />я провожу анализ рынка</span
+                >
+                <div class="profits__list-item-ball"></div>
+              </div>
+              <div class="profits__list-item"></div>
+              <div class="profits__list-item swiper-slide">
+                <span class="profits__list-item-title">Скорость <br />и надежность </span>
+                <span class="profits__list-item-text"
+                  >Соблюдаю сроки, а после сдачи проекта <br />обеспечиваю поддержку и
+                  консультации.</span
+                >
+                <div class="profits__list-item-ball"></div>
+              </div>
+              <div class="profits__list-item swiper-slide">
+                <span class="profits__list-item-title"
+                  >Экономия времени <br />и денег
+                </span>
+                <span class="profits__list-item-text"
+                  >Предлагаю продуманные решения <br />без лишних затрат, помогаю избежать
+                  <br />ошибок на этапе разработки</span
+                >
+                <div class="profits__list-item-ball"></div>
+              </div>
+              <div class="profits__list-item swiper-slide">
+                <span class="profits__list-item-title">Разработка </span>
+                <span class="profits__list-item-text"
+                  >Которая приведет компанию <br />к поставленным целям</span
+                >
+                <div class="profits__list-item-ball"></div>
+              </div>
+              <div class="profits__list-item swiper-slide">
+                <span class="profits__list-item-title">Комплексный <br />подход</span>
+                <span class="profits__list-item-text"
+                  >Я предлагаю лучшие варианты <br />для своих клиентов</span
+                >
+                <div class="profits__list-item-ball"></div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <section class="photos">
+        <div class="photos__wrapper">
+          <img
+            class="photos__img mob__hide"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            src="./assets/img/photos-bg.png"
+            alt=""
+          />
+          <img
+            class="photos__img desk__hide"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            src="./assets/img/photos-bg-mob.png"
+            alt=""
+          />
+          <!-- <img class="photos__img" src="/assets/img/photos-1.png" alt="">
                 <img class="photos__img" src="/assets/img/photos-2.png" alt="">
                 <img class="photos__img" src="/assets/img/photos-3.png" alt="">
                 <img class="photos__img" src="/assets/img/photos-4.png" alt="">
                 <img class="photos__img" src="/assets/img/photos-5.png" alt="">
                 <img class="photos__img" src="/assets/img/photos-6.png" alt=""> -->
+        </div>
+      </section>
+      <section class="projects">
+        <div class="projects__wrapper container">
+          <h1 class="projects__title" data-aos="fade-right" data-aos-duration="1000">
+            Мои работы
+          </h1>
+          <div class="projects__tabs" data-aos="fade-left" data-aos-duration="1000">
+            <div class="projects__tabs-item active" data-filter="all">Все</div>
+            <div class="projects__tabs-item" data-filter="POS-материалы">
+              POS-материалы
             </div>
-        </section>
-        <section class="projects">
-            <div class="projects__wrapper container">
-                <h1 class="projects__title" data-aos="fade-right" data-aos-duration="1000">Мои работы</h1>
-                <div class="projects__tabs" data-aos="fade-left" data-aos-duration="1000">
-                    <div class="projects__tabs-item active" data-filter="all">Все</div>
-                    <div class="projects__tabs-item" data-filter="pos">POS-материалы</div>
-                    <div class="projects__tabs-item" data-filter="web">Web дизайн</div>
-                    <div class="projects__tabs-item" data-filter="uiux">UI / UX</div>
-                </div>
-                <div class="projects__cards" data-aos="fade-up" data-aos-duration="2000">
-                    <div class="projects__cards-item" data-category="web">
-                        <img class="projects__cards-item-img" src="./assets/img/projects-img.png" alt="">
-                        <div class="projects__cards-item-info">
-                            <span class="projects__cards-item-info-title">LANDING PAGE</span>
-                            <span class="projects__cards-item-info-tag">Web дизайн</span>
-                        </div>
-                        <a class="projects__cards-item-more" data-fancybox="" data-src="#modal-project">Читать подробнее</a>
-                    </div>
-                    <div class="projects__cards-item" data-category="pos">
-                        <img class="projects__cards-item-img" src="./assets/img/projects-img.png" alt="">
-                        <div class="projects__cards-item-info">
-                            <span class="projects__cards-item-info-title">LANDING PAGE</span>
-                            <span class="projects__cards-item-info-tag">POS-материалы</span>
-                        </div>
-                        <a class="projects__cards-item-more" href="#">Читать подробнее</a>
-                    </div>
-                    <div class="projects__cards-item" data-category="pos">
-                        <img class="projects__cards-item-img" src="./assets/img/projects-img.png" alt="">
-                        <div class="projects__cards-item-info">
-                            <span class="projects__cards-item-info-title">LANDING PAGE</span>
-                            <span class="projects__cards-item-info-tag">POS-материалы</span>
-                        </div>
-                        <a class="projects__cards-item-more" href="#">Читать подробнее</a>
-                    </div>
-                    <div class="projects__cards-item" data-category="uiux">
-                        <img class="projects__cards-item-img" src="./assets/img/projects-img.png" alt="">
-                        <div class="projects__cards-item-info">
-                            <span class="projects__cards-item-info-title">LANDING PAGE</span>
-                            <span class="projects__cards-item-info-tag">UI / UX</span>
-                        </div>
-                        <a class="projects__cards-item-more" href="#">Читать подробнее</a>
-                    </div>
-                    <div class="projects__cards-item" data-category="web">
-                        <img class="projects__cards-item-img" src="./assets/img/projects-img.png" alt="">
-                        <div class="projects__cards-item-info">
-                            <span class="projects__cards-item-info-title">LANDING PAGE</span>
-                            <span class="projects__cards-item-info-tag">Web дизайн</span>
-                        </div>
-                        <a class="projects__cards-item-more" href="#">Читать подробнее</a>
-                    </div>
-                    <div class="projects__cards-item" data-category="uiux">
-                        <img class="projects__cards-item-img" src="./assets/img/projects-img.png" alt="">
-                        <div class="projects__cards-item-info">
-                            <span class="projects__cards-item-info-title">LANDING PAGE</span>
-                            <span class="projects__cards-item-info-tag">UI / UX</span>
-                        </div>
-                        <a class="projects__cards-item-more" href="#">Читать подробнее</a>
-                    </div>
-                    <div class="projects__cards-item" data-category="pos">
-                        <img class="projects__cards-item-img" src="./assets/img/projects-img.png" alt="">
-                        <div class="projects__cards-item-info">
-                            <span class="projects__cards-item-info-title">LANDING PAGE</span>
-                            <span class="projects__cards-item-info-tag">POS-материалы</span>
-                        </div>
-                        <a class="projects__cards-item-more" href="#">Читать подробнее</a>
-                    </div>
-                    <div class="projects__cards-item" data-category="web">
-                        <img class="projects__cards-item-img" src="./assets/img/projects-img.png" alt="">
-                        <div class="projects__cards-item-info">
-                            <span class="projects__cards-item-info-title">LANDING PAGE</span>
-                            <span class="projects__cards-item-info-tag">Web дизайн</span>
-                        </div>
-                        <a class="projects__cards-item-more" href="#">Читать подробнее</a>
-                    </div>
-                </div>
-                <button class="projects__showmore" data-aos="fade-down" data-aos-duration="1000">Показать еще</button>
+            <div class="projects__tabs-item" data-filter="Web дизайн">Web дизайн</div>
+            <div class="projects__tabs-item" data-filter="UI / UX">UI / UX</div>
+          </div>
+          <div class="projects__cards" data-aos="fade-up" data-aos-duration="2000">
+            <div class="projects__cards-item" data-category="web">
+              <img
+                class="projects__cards-item-img"
+                src="./assets/img/projects-img.png"
+                alt=""
+              />
+              <div class="projects__cards-item-info">
+                <span class="projects__cards-item-info-title">LANDING PAGE</span>
+                <span class="projects__cards-item-info-tag">Web дизайн</span>
+              </div>
+              <a
+                class="projects__cards-item-more"
+                data-fancybox=""
+                data-src="#modal-project"
+                >Читать подробнее</a
+              >
             </div>
-        </section>
-        <section class="modals">
-            <div data-modal id="modal-get-offer" class="modal-get-offer hidden padding">
-                <div class="modal-box">
-                    <span class="modal-title">Хотите заказать <br> продающий дизайн?</span>
-                    <span class="modal-subtitle">Оставьте заявку и я свяжусь с вами в течении 5 минут</span>
-                    <form class="modal-form" action="">
-                        <input name="phone" class="form-tel number-mask modal-input" type="name" placeholder="Имя" required />
-                        <input name="phone" class="form-tel number-mask modal-input" type="tel" placeholder="+ 7 (___) ___-__-__" required />
-                        <button class="form-btn js--send-btn modal-btn" type="submit">
-                            Отправить заявку
-                        </button>
-                        <label class="form-checkbox-container">
-                            <input type="hidden" name="carbrand" value="" />
-                            <input type="hidden" name="carmodel" value="" />
-                            <input type="hidden" name="carequipment" value="" />
-                            <input type="hidden" name="carprice" value="" />
-                            <input type="hidden" name="carcolor" value="" />
-                            <input type="hidden" name="url" value="{{ url_current() }}" />
-                            <input type="hidden" name="idtype" value="201" />
-                            <input class="form-checkbox" type="checkbox" name="" checked required />
-                            <span class="custom-checkbox"><img class="check" src="./assets/img/svg/check.svg" alt="" /></span>
-                            <span class="form-text">Отправив форму путём нажатия на кнопку, я подтверждаю, что ознакомлен <br> с политикой конфиденциальности сайта</span>
-                        </label>
-                    </form>
-                </div>
+            <div class="projects__cards-item" data-category="pos">
+              <img
+                class="projects__cards-item-img"
+                src="./assets/img/projects-img.png"
+                alt=""
+              />
+              <div class="projects__cards-item-info">
+                <span class="projects__cards-item-info-title">LANDING PAGE</span>
+                <span class="projects__cards-item-info-tag">POS-материалы</span>
+              </div>
+              <a class="projects__cards-item-more" href="#">Читать подробнее</a>
             </div>
-            <div data-modal id="modal-project" class="modal-project hidden padding">
-                <div class="modal-box">
-                    <img class="modal-project-img" src="./assets/img/modal-project.png" alt="">
-                    <span class="modal-project-tag">LANDING PAGE</span>
-                    <span class="modal-title">Каталог</span>
-                    <p class="modal-text">для абитуриентов для Московского <br> городского открытого колледжа</p>
-                    <span class="modal-subtitle">Задача</span>
-                    <p class="modal-text">Разработать стильный, удобный и информативный каталог для абитуриентов колледжа, который поможет абитуриентам быстро найти нужную информацию и сделать осознанный выбор.</p>
-                    <span class="modal-subtitle">Решение</span>
-                    <p class="modal-text">Создала современный макет с продуманной навигацией, сочетающий визуальную привлекательность и функциональность. В дизайне использованы:</p>
-                    <ul>
-                        <li class="modal-list">Четкая иерархия – разделы легко читаются благодаря типографике и акцентам</li>
-                        <li class="modal-list">Фирменный стиль колледжа – цвета, логотип, шрифты для узнаваемости</li>
-                        <li class="modal-list">Инфографика и иллюстрации – схемы поступления, иконки специальностей, фото кампуса.</li>
-                        <li class="modal-list">Адаптивная верстка – каталог удобно просматривать как в печатной версии, так и в PDF.</li>
-                    </ul>
-                    <span class="modal-subtitle">Структура и контент</span>
-                    <ul>
-                        <li class="modal-list">О колледже – история, преимущества, фото аудиторий и преподавателей.</li>
-                        <li class="modal-list">Специальности – карточки направлений с ключевыми дисциплинами и карьерными перспективами.</li>
-                        <li class="modal-list">Условия поступления – этапы, сроки, список документов.</li>
-                        <li class="modal-list">Финансовая информация – стоимость обучения, скидки, акции, варианты рассрочки.</li>
-                        <li class="modal-list">Контакты – QR-коды, ссылки на соцсети, онлайн-заявка.</li>
-                    </ul>
-                    <span class="modal-subtitle">Результат</span>
-                    <p class="modal-text"> Каталог получился эстетичным, удобным и информативным. Приемная комиссия отметила, что после его запуска увеличилось количество обращений от абитуриентов.</p>
-                    <a class="modal-link" href="#">Посмотреть кейс на Behance</a>
-                </div>
+            <div class="projects__cards-item" data-category="pos">
+              <img
+                class="projects__cards-item-img"
+                src="./assets/img/projects-img.png"
+                alt=""
+              />
+              <div class="projects__cards-item-info">
+                <span class="projects__cards-item-info-title">LANDING PAGE</span>
+                <span class="projects__cards-item-info-tag">POS-материалы</span>
+              </div>
+              <a class="projects__cards-item-more" href="#">Читать подробнее</a>
             </div>
-            <div data-modal id="modal-thanks" class="modal-thanks hidden padding">
-                <div class="modal-thanks-box">
-                    <p class="modal-thanks-title">Спасибо за заявку!</p>
-                    <p class="modal-thanks-text">Наш менеджер свяжется с Вами в ближайшее время!</p>
-                </div>
+            <div class="projects__cards-item" data-category="uiux">
+              <img
+                class="projects__cards-item-img"
+                src="./assets/img/projects-img.png"
+                alt=""
+              />
+              <div class="projects__cards-item-info">
+                <span class="projects__cards-item-info-title">LANDING PAGE</span>
+                <span class="projects__cards-item-info-tag">UI / UX</span>
+              </div>
+              <a class="projects__cards-item-more" href="#">Читать подробнее</a>
             </div>
-            <div data-modal id="modal-error" class="modal-thanks hidden padding">
-                <div class="modal-thanks-box">
-                    <p class="modal-error-title">Вы уже оставляли заявку!</p>
-                    <p class="modal-thanks-text">Наш менеджер свяжется с Вами через 2-3 минуты</p>
-                </div>
+            <div class="projects__cards-item" data-category="web">
+              <img
+                class="projects__cards-item-img"
+                src="./assets/img/projects-img.png"
+                alt=""
+              />
+              <div class="projects__cards-item-info">
+                <span class="projects__cards-item-info-title">LANDING PAGE</span>
+                <span class="projects__cards-item-info-tag">Web дизайн</span>
+              </div>
+              <a class="projects__cards-item-more" href="#">Читать подробнее</a>
             </div>
-        </section>
+            <div class="projects__cards-item" data-category="uiux">
+              <img
+                class="projects__cards-item-img"
+                src="./assets/img/projects-img.png"
+                alt=""
+              />
+              <div class="projects__cards-item-info">
+                <span class="projects__cards-item-info-title">LANDING PAGE</span>
+                <span class="projects__cards-item-info-tag">UI / UX</span>
+              </div>
+              <a class="projects__cards-item-more" href="#">Читать подробнее</a>
+            </div>
+            <div class="projects__cards-item" data-category="pos">
+              <img
+                class="projects__cards-item-img"
+                src="./assets/img/projects-img.png"
+                alt=""
+              />
+              <div class="projects__cards-item-info">
+                <span class="projects__cards-item-info-title">LANDING PAGE</span>
+                <span class="projects__cards-item-info-tag">POS-материалы</span>
+              </div>
+              <a class="projects__cards-item-more" href="#">Читать подробнее</a>
+            </div>
+            <div class="projects__cards-item" data-category="web">
+              <img
+                class="projects__cards-item-img"
+                src="./assets/img/projects-img.png"
+                alt=""
+              />
+              <div class="projects__cards-item-info">
+                <span class="projects__cards-item-info-title">LANDING PAGE</span>
+                <span class="projects__cards-item-info-tag">Web дизайн</span>
+              </div>
+              <a class="projects__cards-item-more" href="#">Читать подробнее</a>
+            </div>
+          </div>
+          <button
+            class="projects__showmore"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+          >
+            Показать еще
+          </button>
+        </div>
+      </section>
+      <section class="modals">
+        <div data-modal id="modal-get-offer" class="modal-get-offer hidden padding">
+          <div class="modal-box">
+            <span class="modal-title"
+              >Хотите заказать <br />
+              продающий дизайн?</span
+            >
+            <span class="modal-subtitle"
+              >Оставьте заявку и я свяжусь с вами в течении 5 минут</span
+            >
+            <form class="modal-form" action="">
+              <input
+                name="phone"
+                class="form-tel number-mask modal-input"
+                type="name"
+                placeholder="Имя"
+                required
+              />
+              <input
+                name="phone"
+                class="form-tel number-mask modal-input"
+                type="tel"
+                placeholder="+ 7 (___) ___-__-__"
+                required
+              />
+              <button class="form-btn js--send-btn modal-btn" type="submit">
+                Отправить заявку
+              </button>
+              <label class="form-checkbox-container">
+                <input type="hidden" name="carbrand" value="" />
+                <input type="hidden" name="carmodel" value="" />
+                <input type="hidden" name="carequipment" value="" />
+                <input type="hidden" name="carprice" value="" />
+                <input type="hidden" name="carcolor" value="" />
+                <input type="hidden" name="url" value="{{ url_current() }}" />
+                <input type="hidden" name="idtype" value="201" />
+                <input class="form-checkbox" type="checkbox" name="" checked required />
+                <span class="custom-checkbox"
+                  ><img class="check" src="./assets/img/svg/check.svg" alt=""
+                /></span>
+                <span class="form-text"
+                  >Отправив форму путём нажатия на кнопку, я подтверждаю, что ознакомлен
+                  <br />
+                  с политикой конфиденциальности сайта</span
+                >
+              </label>
+            </form>
+          </div>
+        </div>
+        <div data-modal id="modal-project" class="modal-project hidden padding">
+          <div class="modal-box">
+            <img class="modal-project-img" src="" alt="" />
+            <span class="modal-project-tag"></span>
+            <span class="modal-title"></span>
+            <p class="modal-text short-desc"></p>
+
+            <span class="modal-subtitle">Задача</span>
+            <p class="modal-text task"></p>
+
+            <span class="modal-subtitle">Решение</span>
+            <p class="modal-text solution"></p>
+
+            <span class="modal-subtitle">Структура и контент</span>
+            <ul class="structure-list"></ul>
+
+            <span class="modal-subtitle">Результат</span>
+            <p class="modal-text result"></p>
+
+            <a class="modal-link" href="#" target="_blank">Посмотреть кейс на Behance</a>
+          </div>
+        </div>
+
+        <div data-modal id="modal-thanks" class="modal-thanks hidden padding">
+          <div class="modal-thanks-box">
+            <p class="modal-thanks-title">Спасибо за заявку!</p>
+            <p class="modal-thanks-text">
+              Наш менеджер свяжется с Вами в ближайшее время!
+            </p>
+          </div>
+        </div>
+        <div data-modal id="modal-error" class="modal-thanks hidden padding">
+          <div class="modal-thanks-box">
+            <p class="modal-error-title">Вы уже оставляли заявку!</p>
+            <p class="modal-thanks-text">Наш менеджер свяжется с Вами через 2-3 минуты</p>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer" data-aos="fade-up" data-aos-duration="1000">
-        <div class="footer__wrapper container">
-            <div class="footer__left" data-aos="fade-right" data-aos-duration="1000">
-                <p class="footer__left-info">
-                    *Обращаем ваше внимание на то, что данный Интернет-сайт носит исключительно информационный характер и ни <br>
-                    при каких условиях не является публичной офертой, определяемой положениями статьей 435, 437, 494 <br>
-                    Гражданского кодекса Российской Федерации. 
-                </p>
-                <p class="footer__left-info">
-                    * Пользователь данного интернет-ресурса обратившийся, через специальные формы связи, размещённые на <br>
-                    данном сайте, а также по средствам телефонного звонка, выражает свое безусловное согласие продолжить устную <br>
-                    или письменную коммуникацию с помощью электронных средств связи, в т.ч.: sms-информирование, e-mail- <br>
-                    рассылка и т.п. и т.д.
-                </p>
-                <div class="footer__social">
-                    <a class="footer__social-item" href="https://www.tg.com/">
-                        <!-- <img src="./assets/img/svg/tg.svg" alt=""> -->
-                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_421_9002)">
-                            <path class="first-path" fill-rule="evenodd" clip-rule="evenodd" d="M15 0C6.71602 0 0 6.71602 0 15C0 23.284 6.71602 30 15 30C23.284 30 30 23.284 30 15C30 6.71602 23.284 0 15 0ZM21.9527 10.2012C21.7271 12.573 20.7504 18.3287 20.2535 20.9854C20.0432 22.1098 19.6289 22.4865 19.2281 22.5234C18.3574 22.6037 17.6959 21.9475 16.8521 21.3943C15.532 20.5289 14.7861 19.9904 13.5047 19.1461C12.0234 18.1699 12.9838 17.6338 13.8275 16.7572C14.0484 16.5275 17.8863 13.0365 17.9607 12.7201C17.9701 12.6803 17.9789 12.5326 17.891 12.4547C17.8031 12.3768 17.6736 12.4037 17.5805 12.4248C17.448 12.4547 15.3387 13.8486 11.2535 16.6066C10.6547 17.018 10.1127 17.2178 9.62637 17.2078C9.09082 17.1961 8.06074 16.9049 7.29492 16.6559C6.35566 16.3506 5.60918 16.1889 5.67422 15.6703C5.70762 15.4002 6.07969 15.1242 6.78984 14.8418C11.1627 12.9363 14.0783 11.6807 15.5373 11.0736C19.7033 9.34107 20.5688 9.03984 21.1329 9.02988C21.8397 9.0174 22.0103 9.60076 21.9527 10.2012Z" fill="#DEDEDE"/>
-                            </g>
-                            <defs>
-                            <clipPath id="clip0_421_9002">
-                            <rect width="30" height="30" fill="white"/>
-                            </clipPath>
-                            </defs>
-                        </svg>
-                    </a>
-                    <a class="footer__social-item" href="https://www.wp.com/">
-                        <!-- <img src="./assets/img/svg/wp.svg" alt=""> -->
-                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_421_9013)">
-                            <path class="first-path" d="M23.6031 0H6.39844C2.86468 0 0 2.86468 0 6.39844V23.6031C0 27.1368 2.86468 30.0015 6.39844 30.0015H23.6031C27.1368 30.0015 30.0015 27.1368 30.0015 23.6031V6.39844C30.0015 2.86468 27.1368 0 23.6031 0Z" fill="#DEDEDE"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.5738 6.22112C9.93127 6.44191 6.26794 10.3083 6.28187 14.9558C6.28625 16.3711 6.6279 17.7075 7.23097 18.8881L6.30543 23.3808C6.25516 23.624 6.47448 23.8369 6.71589 23.7797L11.1182 22.7368C12.2492 23.3001 13.5199 23.6254 14.8644 23.6461C19.6092 23.7184 23.5657 19.9511 23.7139 15.2077C23.8722 10.1232 19.6757 5.97793 14.5738 6.22112ZM19.8268 19.7559C18.5375 21.0451 16.8232 21.7552 15.0001 21.7552C13.9324 21.7552 12.9101 21.5155 11.9616 21.0431L11.3489 20.7378L8.64954 21.3772L9.21751 18.6191L8.91562 18.0277C8.42322 17.0634 8.17372 16.0208 8.17372 14.9288C8.17372 13.1052 8.88373 11.3913 10.173 10.1017C11.4506 8.82409 13.1928 8.10247 15.0001 8.10247C16.8233 8.10247 18.5376 8.81272 19.8268 10.1017C21.1161 11.391 21.8261 13.1053 21.8261 14.9285C21.8264 16.7358 21.1048 18.4779 19.8268 19.7559Z" fill="#242323"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M19.2309 16.8194L17.5422 16.3345C17.3203 16.271 17.0812 16.3339 16.9194 16.4987L16.5066 16.9193C16.3323 17.0968 16.0682 17.1538 15.8378 17.0606C15.0389 16.7375 13.3584 15.2431 12.9296 14.4959C12.8055 14.2804 12.8261 14.0111 12.9781 13.8141L13.3386 13.3478C13.4798 13.1651 13.5094 12.9196 13.4162 12.7084L12.7059 11.1013C12.5357 10.7167 12.0438 10.6046 11.7225 10.8762C11.2514 11.2751 10.6921 11.8805 10.6241 12.5516C10.5042 13.7348 11.0116 15.2263 12.9302 17.0173C15.147 19.0862 16.9221 19.3597 18.078 19.0796C18.7337 18.9209 19.2574 18.2845 19.588 17.7633C19.8134 17.4074 19.6354 16.9356 19.2309 16.8194Z" fill="#242323"/>
-                            </g>
-                            <defs>
-                            <clipPath id="clip0_421_9013">
-                            <rect width="30" height="30" fill="white"/>
-                            </clipPath>
-                            </defs>
-                        </svg>
-                    </a>
-                    <a class="footer__social-item" href="https://www.vk.com/">
-                        <!-- <img src="./assets/img/svg/vk.svg" alt=""> -->
-                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_422_9020)">
-                            <path class="first-path" d="M27.8947 2.10527C25.7895 0 22.4016 0 15.6252 0H14.3748C7.59844 0 4.21055 0 2.10527 2.10527C0 4.21055 0 7.59844 0 14.3748V15.6252C0 22.4016 0 25.7895 2.10527 27.8947C4.21055 30 7.59844 30 14.3748 30H15.6252C22.4016 30 25.7895 30 27.8947 27.8947C30 25.7895 30 22.4016 30 15.6252V14.3748C30 7.59844 30 4.21055 27.8947 2.10527ZM24.3791 21.2502H22.1912C21.3568 21.2502 21.1125 20.5846 19.6289 19.1016C18.3305 17.85 17.7744 17.6877 17.4498 17.6877C17.0092 17.6877 16.8773 17.8125 16.8773 18.4377V20.3994C16.8773 20.9373 16.7057 21.2502 15.3146 21.2502C12.9967 21.2502 10.449 19.8428 8.64141 17.2477C5.9291 13.4467 5.1873 10.5732 5.1873 9.99375C5.1873 9.66914 5.3127 9.375 5.9373 9.375H8.12578C8.68476 9.375 8.89512 9.61992 9.10488 10.2252C10.1748 13.3418 11.9795 16.0658 12.7213 16.0658C12.999 16.0658 13.1268 15.9375 13.1268 15.2314V12.01C13.0453 10.527 12.2572 10.4051 12.2572 9.87773C12.2572 9.6334 12.4664 9.375 12.8139 9.375H16.2521C16.7162 9.375 16.8773 9.62285 16.8773 10.1789V14.5131C16.8773 14.976 17.0789 15.1383 17.2178 15.1383C17.4961 15.1383 17.7281 14.976 18.2379 14.4662C19.8141 12.7049 20.9268 9.99375 20.9268 9.99375C21.0662 9.66914 21.3223 9.375 21.8789 9.375H24.0668C24.7283 9.375 24.8678 9.71543 24.7283 10.1789C24.45 11.4539 21.7846 15.208 21.7846 15.208C21.5525 15.5789 21.46 15.7641 21.7846 16.1812C22.0166 16.5059 22.7812 17.1545 23.291 17.7574C24.2309 18.8145 24.9393 19.7062 25.1367 20.3209C25.3172 20.9373 25.0043 21.2502 24.3791 21.2502Z" fill="#DEDEDE"/>
-                            </g>
-                            <defs>
-                            <clipPath id="clip0_422_9020">
-                            <rect width="30" height="30" fill="white"/>
-                            </clipPath>
-                            </defs>
-                        </svg>
-
-                    </a>
-                    <a class="footer__social-item" href="https://www.beehance.com/">
-                        <!-- <img src="./assets/img/svg/behance.svg" alt=""> -->
-                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_421_9006)">
-                            <path class="first-path" d="M24.375 0H5.625C4.13449 0.00432842 2.70626 0.598351 1.65231 1.65231C0.598351 2.70626 0.00432842 4.13449 0 5.625L0 24.375C0.00432842 25.8655 0.598351 27.2937 1.65231 28.3477C2.70626 29.4016 4.13449 29.9957 5.625 30H24.375C25.8655 29.9957 27.2937 29.4016 28.3477 28.3477C29.4016 27.2937 29.9957 25.8655 30 24.375V5.625C29.9957 4.13449 29.4016 2.70626 28.3477 1.65231C27.2937 0.598351 25.8655 0.00432842 24.375 0Z" fill="#DEDEDE"/>
-                            <path d="M13.3594 14.7656C13.3594 14.7656 14.7656 14.243 14.7656 12.4219C14.7656 10.6008 13.5609 9.84375 11.9531 9.84375H6.5625V20.1562H11.9531C11.9531 20.1562 15 20.1562 15 17.1094C15 17.1094 15 14.7656 13.3594 14.7656ZM8.90625 11.7188H11.9531C11.9531 11.7188 12.6562 11.7188 12.6562 12.6562C12.6562 13.7156 12.1875 13.8281 11.7188 13.8281H8.90625V11.7188ZM11.7188 18.2812H8.90625V15.7031L11.857 15.6867C11.857 15.6867 12.8906 15.7031 12.8906 17.1094C12.8906 18.2812 12.143 18.2695 11.7188 18.2812Z" fill="#242323"/>
-                            <path d="M19.868 12.3937C15.9562 12.3937 15.9586 16.3031 15.9586 16.3031C15.9586 16.3031 15.743 20.1562 19.9219 20.1562C19.9219 20.1562 23.4375 20.482 23.4375 17.5781H21.5625C21.5625 17.5781 21.6187 18.5812 19.9219 18.5812C19.9219 18.5812 18.0469 18.7664 18.0469 16.875H23.4375C23.4375 16.875 23.9859 12.3937 19.868 12.3937ZM21.5625 15.4687H18.0469C18.0469 15.4687 18.3375 13.8844 19.9078 13.8844C21.4781 13.8844 21.5625 15.4687 21.5625 15.4687Z" fill="#242323"/>
-                            <path d="M17.5781 10.3125H22.0312V11.7188H17.5781V10.3125Z" fill="#242323"/>
-                            </g>
-                            <defs>
-                            <clipPath id="clip0_421_9006">
-                            <rect width="30" height="30" fill="white"/>
-                            </clipPath>
-                            </defs>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-            <div class="footer__right" data-aos="fade-up" data-aos-duration="1000">
-                <span class="footer__right-title">Остались вопросы?</span>
-                <span class="footer__right-subtitle">Оставьте заявку и мы свяжемся с вами в течении 5 минут</span>
-                <form class="footer__right-form">
-                    <input class="footer__right-form__input" name="name" type="text" placeholder="Имя">
-                    <input class="footer__right-form__input" name="tel" type="tel" placeholder="Телефон">
-                    <button class="footer__right-form__btn">Отправить заявку</button>
-                    <label class="footer__right-form__checkbox-wrapper">
-                        <input class="footer__right-form__checkbox" type="checkbox" name="" checked required />
-                        <span class="custom-checkbox"><img class="check" src="./assets/img/svg/check.svg" alt="" /></span>
-                        <span class="footer__right-form__text">Нажимая кнопку “Отправить заявку”, Вы даете согласие на обработку своих персональных данных</span>
-                    </label>
-                </form>
-            </div>
+      <div class="footer__wrapper container">
+        <div class="footer__left" data-aos="fade-right" data-aos-duration="1000">
+          <p class="footer__left-info">
+            *Обращаем ваше внимание на то, что данный Интернет-сайт носит исключительно
+            информационный характер и ни <br />
+            при каких условиях не является публичной офертой, определяемой положениями
+            статьей 435, 437, 494 <br />
+            Гражданского кодекса Российской Федерации.
+          </p>
+          <p class="footer__left-info">
+            * Пользователь данного интернет-ресурса обратившийся, через специальные формы
+            связи, размещённые на <br />
+            данном сайте, а также по средствам телефонного звонка, выражает свое
+            безусловное согласие продолжить устную <br />
+            или письменную коммуникацию с помощью электронных средств связи, в т.ч.:
+            sms-информирование, e-mail- <br />
+            рассылка и т.п. и т.д.
+          </p>
+          <div class="footer__social">
+            <a class="footer__social-item" href="https://www.tg.com/">
+              <!-- <img src="./assets/img/svg/tg.svg" alt=""> -->
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_421_9002)">
+                  <path
+                    class="first-path"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M15 0C6.71602 0 0 6.71602 0 15C0 23.284 6.71602 30 15 30C23.284 30 30 23.284 30 15C30 6.71602 23.284 0 15 0ZM21.9527 10.2012C21.7271 12.573 20.7504 18.3287 20.2535 20.9854C20.0432 22.1098 19.6289 22.4865 19.2281 22.5234C18.3574 22.6037 17.6959 21.9475 16.8521 21.3943C15.532 20.5289 14.7861 19.9904 13.5047 19.1461C12.0234 18.1699 12.9838 17.6338 13.8275 16.7572C14.0484 16.5275 17.8863 13.0365 17.9607 12.7201C17.9701 12.6803 17.9789 12.5326 17.891 12.4547C17.8031 12.3768 17.6736 12.4037 17.5805 12.4248C17.448 12.4547 15.3387 13.8486 11.2535 16.6066C10.6547 17.018 10.1127 17.2178 9.62637 17.2078C9.09082 17.1961 8.06074 16.9049 7.29492 16.6559C6.35566 16.3506 5.60918 16.1889 5.67422 15.6703C5.70762 15.4002 6.07969 15.1242 6.78984 14.8418C11.1627 12.9363 14.0783 11.6807 15.5373 11.0736C19.7033 9.34107 20.5688 9.03984 21.1329 9.02988C21.8397 9.0174 22.0103 9.60076 21.9527 10.2012Z"
+                    fill="#DEDEDE"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_421_9002">
+                    <rect width="30" height="30" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+            <a class="footer__social-item" href="https://www.wp.com/">
+              <!-- <img src="./assets/img/svg/wp.svg" alt=""> -->
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_421_9013)">
+                  <path
+                    class="first-path"
+                    d="M23.6031 0H6.39844C2.86468 0 0 2.86468 0 6.39844V23.6031C0 27.1368 2.86468 30.0015 6.39844 30.0015H23.6031C27.1368 30.0015 30.0015 27.1368 30.0015 23.6031V6.39844C30.0015 2.86468 27.1368 0 23.6031 0Z"
+                    fill="#DEDEDE"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M14.5738 6.22112C9.93127 6.44191 6.26794 10.3083 6.28187 14.9558C6.28625 16.3711 6.6279 17.7075 7.23097 18.8881L6.30543 23.3808C6.25516 23.624 6.47448 23.8369 6.71589 23.7797L11.1182 22.7368C12.2492 23.3001 13.5199 23.6254 14.8644 23.6461C19.6092 23.7184 23.5657 19.9511 23.7139 15.2077C23.8722 10.1232 19.6757 5.97793 14.5738 6.22112ZM19.8268 19.7559C18.5375 21.0451 16.8232 21.7552 15.0001 21.7552C13.9324 21.7552 12.9101 21.5155 11.9616 21.0431L11.3489 20.7378L8.64954 21.3772L9.21751 18.6191L8.91562 18.0277C8.42322 17.0634 8.17372 16.0208 8.17372 14.9288C8.17372 13.1052 8.88373 11.3913 10.173 10.1017C11.4506 8.82409 13.1928 8.10247 15.0001 8.10247C16.8233 8.10247 18.5376 8.81272 19.8268 10.1017C21.1161 11.391 21.8261 13.1053 21.8261 14.9285C21.8264 16.7358 21.1048 18.4779 19.8268 19.7559Z"
+                    fill="#242323"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M19.2309 16.8194L17.5422 16.3345C17.3203 16.271 17.0812 16.3339 16.9194 16.4987L16.5066 16.9193C16.3323 17.0968 16.0682 17.1538 15.8378 17.0606C15.0389 16.7375 13.3584 15.2431 12.9296 14.4959C12.8055 14.2804 12.8261 14.0111 12.9781 13.8141L13.3386 13.3478C13.4798 13.1651 13.5094 12.9196 13.4162 12.7084L12.7059 11.1013C12.5357 10.7167 12.0438 10.6046 11.7225 10.8762C11.2514 11.2751 10.6921 11.8805 10.6241 12.5516C10.5042 13.7348 11.0116 15.2263 12.9302 17.0173C15.147 19.0862 16.9221 19.3597 18.078 19.0796C18.7337 18.9209 19.2574 18.2845 19.588 17.7633C19.8134 17.4074 19.6354 16.9356 19.2309 16.8194Z"
+                    fill="#242323"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_421_9013">
+                    <rect width="30" height="30" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+            <a class="footer__social-item" href="https://www.vk.com/">
+              <!-- <img src="./assets/img/svg/vk.svg" alt=""> -->
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_422_9020)">
+                  <path
+                    class="first-path"
+                    d="M27.8947 2.10527C25.7895 0 22.4016 0 15.6252 0H14.3748C7.59844 0 4.21055 0 2.10527 2.10527C0 4.21055 0 7.59844 0 14.3748V15.6252C0 22.4016 0 25.7895 2.10527 27.8947C4.21055 30 7.59844 30 14.3748 30H15.6252C22.4016 30 25.7895 30 27.8947 27.8947C30 25.7895 30 22.4016 30 15.6252V14.3748C30 7.59844 30 4.21055 27.8947 2.10527ZM24.3791 21.2502H22.1912C21.3568 21.2502 21.1125 20.5846 19.6289 19.1016C18.3305 17.85 17.7744 17.6877 17.4498 17.6877C17.0092 17.6877 16.8773 17.8125 16.8773 18.4377V20.3994C16.8773 20.9373 16.7057 21.2502 15.3146 21.2502C12.9967 21.2502 10.449 19.8428 8.64141 17.2477C5.9291 13.4467 5.1873 10.5732 5.1873 9.99375C5.1873 9.66914 5.3127 9.375 5.9373 9.375H8.12578C8.68476 9.375 8.89512 9.61992 9.10488 10.2252C10.1748 13.3418 11.9795 16.0658 12.7213 16.0658C12.999 16.0658 13.1268 15.9375 13.1268 15.2314V12.01C13.0453 10.527 12.2572 10.4051 12.2572 9.87773C12.2572 9.6334 12.4664 9.375 12.8139 9.375H16.2521C16.7162 9.375 16.8773 9.62285 16.8773 10.1789V14.5131C16.8773 14.976 17.0789 15.1383 17.2178 15.1383C17.4961 15.1383 17.7281 14.976 18.2379 14.4662C19.8141 12.7049 20.9268 9.99375 20.9268 9.99375C21.0662 9.66914 21.3223 9.375 21.8789 9.375H24.0668C24.7283 9.375 24.8678 9.71543 24.7283 10.1789C24.45 11.4539 21.7846 15.208 21.7846 15.208C21.5525 15.5789 21.46 15.7641 21.7846 16.1812C22.0166 16.5059 22.7812 17.1545 23.291 17.7574C24.2309 18.8145 24.9393 19.7062 25.1367 20.3209C25.3172 20.9373 25.0043 21.2502 24.3791 21.2502Z"
+                    fill="#DEDEDE"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_422_9020">
+                    <rect width="30" height="30" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+            <a class="footer__social-item" href="https://www.beehance.com/">
+              <!-- <img src="./assets/img/svg/behance.svg" alt=""> -->
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_421_9006)">
+                  <path
+                    class="first-path"
+                    d="M24.375 0H5.625C4.13449 0.00432842 2.70626 0.598351 1.65231 1.65231C0.598351 2.70626 0.00432842 4.13449 0 5.625L0 24.375C0.00432842 25.8655 0.598351 27.2937 1.65231 28.3477C2.70626 29.4016 4.13449 29.9957 5.625 30H24.375C25.8655 29.9957 27.2937 29.4016 28.3477 28.3477C29.4016 27.2937 29.9957 25.8655 30 24.375V5.625C29.9957 4.13449 29.4016 2.70626 28.3477 1.65231C27.2937 0.598351 25.8655 0.00432842 24.375 0Z"
+                    fill="#DEDEDE"
+                  />
+                  <path
+                    d="M13.3594 14.7656C13.3594 14.7656 14.7656 14.243 14.7656 12.4219C14.7656 10.6008 13.5609 9.84375 11.9531 9.84375H6.5625V20.1562H11.9531C11.9531 20.1562 15 20.1562 15 17.1094C15 17.1094 15 14.7656 13.3594 14.7656ZM8.90625 11.7188H11.9531C11.9531 11.7188 12.6562 11.7188 12.6562 12.6562C12.6562 13.7156 12.1875 13.8281 11.7188 13.8281H8.90625V11.7188ZM11.7188 18.2812H8.90625V15.7031L11.857 15.6867C11.857 15.6867 12.8906 15.7031 12.8906 17.1094C12.8906 18.2812 12.143 18.2695 11.7188 18.2812Z"
+                    fill="#242323"
+                  />
+                  <path
+                    d="M19.868 12.3937C15.9562 12.3937 15.9586 16.3031 15.9586 16.3031C15.9586 16.3031 15.743 20.1562 19.9219 20.1562C19.9219 20.1562 23.4375 20.482 23.4375 17.5781H21.5625C21.5625 17.5781 21.6187 18.5812 19.9219 18.5812C19.9219 18.5812 18.0469 18.7664 18.0469 16.875H23.4375C23.4375 16.875 23.9859 12.3937 19.868 12.3937ZM21.5625 15.4687H18.0469C18.0469 15.4687 18.3375 13.8844 19.9078 13.8844C21.4781 13.8844 21.5625 15.4687 21.5625 15.4687Z"
+                    fill="#242323"
+                  />
+                  <path
+                    d="M17.5781 10.3125H22.0312V11.7188H17.5781V10.3125Z"
+                    fill="#242323"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_421_9006">
+                    <rect width="30" height="30" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </div>
         </div>
+        <div class="footer__right" data-aos="fade-up" data-aos-duration="1000">
+          <span class="footer__right-title">Остались вопросы?</span>
+          <span class="footer__right-subtitle"
+            >Оставьте заявку и мы свяжемся с вами в течении 5 минут</span
+          >
+          <form class="footer__right-form">
+            <input
+              class="footer__right-form__input"
+              name="name"
+              type="text"
+              placeholder="Имя"
+            />
+            <input
+              class="footer__right-form__input"
+              name="tel"
+              type="tel"
+              placeholder="Телефон"
+            />
+            <button class="footer__right-form__btn">Отправить заявку</button>
+            <label class="footer__right-form__checkbox-wrapper">
+              <input
+                class="footer__right-form__checkbox"
+                type="checkbox"
+                name=""
+                checked
+                required
+              />
+              <span class="custom-checkbox"
+                ><img class="check" src="./assets/img/svg/check.svg" alt=""
+              /></span>
+              <span class="footer__right-form__text"
+                >Нажимая кнопку “Отправить заявку”, Вы даете согласие на обработку своих
+                персональных данных</span
+              >
+            </label>
+          </form>
+        </div>
+      </div>
     </footer>
     <script src="./assets/js/libs/jquery.min.js"></script>
     <script src="./assets/js/libs/fancybox.min.js"></script>
@@ -416,5 +698,5 @@
     <script src="./assets/js/libs/masked-input.min.js"></script>
     <script src="./assets/js/libs/aos.js"></script>
     <script src="./assets/js/main.js"></script>
-</body>
+  </body>
 </html>
