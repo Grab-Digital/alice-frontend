@@ -32,7 +32,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
           // ✅ Поправлено: image — сразу объект
           const imageUrl = workData.image?.url
-            ? `http://localhost:1337${workData.image.url}`
+            ? `https://alice-backend-oog7.onrender.com${workData.image.url}`
             : "./assets/img/projects-img.png";
 
           const task = workData.task || "";
