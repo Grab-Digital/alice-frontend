@@ -139,7 +139,7 @@ window.addEventListener("DOMContentLoaded", () => {
           }
         }
 
-        // Добавим URL текущей страницы вручную
+        // Добавим URL вручную
         data.url = window.location.href;
 
         try {
@@ -151,8 +151,9 @@ window.addEventListener("DOMContentLoaded", () => {
             body: JSON.stringify(data),
           });
 
-          // Скрыть текущую модалку (если она есть)
-          form.closest("[data-modal]")?.classList.add("hidden");
+          // Скрываем текущую открытую модалку
+          const currentModal = form.closest("[data-modal]");
+          if (currentModal) currentModal.classList.add("hidden");
 
           if (response.ok) {
             form.reset();
@@ -172,10 +173,11 @@ window.addEventListener("DOMContentLoaded", () => {
         el.classList.add("hidden");
       });
 
-      document.querySelector(selector)?.classList.remove("hidden");
+      const modal = document.querySelector(selector);
+      if (modal) modal.classList.remove("hidden");
 
       setTimeout(() => {
-        document.querySelector(selector)?.classList.add("hidden");
+        modal?.classList.add("hidden");
       }, 5000);
     }
   }
