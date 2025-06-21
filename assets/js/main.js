@@ -14,8 +14,6 @@ window.addEventListener("DOMContentLoaded", () => {
     fetch("https://alice-backend-oog7.onrender.com/api/works?populate=*")
       .then((response) => response.json())
       .then((data) => {
-        console.log("Полученные данные:", data);
-
         if (!data.data || data.data.length === 0) {
           console.error("Нет данных или коллекция пуста!");
           return;
