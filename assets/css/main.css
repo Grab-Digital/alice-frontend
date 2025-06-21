@@ -1727,12 +1727,6 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1000;
-  width: 100vw;
-  height: 100vh;
-  display: none;
-  align-items: center;
-  justify-content: center;
   background: rgba(0, 0, 0, 0.6);
 }
 
@@ -1758,6 +1752,10 @@
   text-align: center;
   border-radius: 12px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.modal-thanks {
+  background: #fff;
 }
 
 @media (max-width: 991px) {
@@ -1882,7 +1880,7 @@
   --f-button-height: 50px;
 }
 
-/* .modal-get-offer {
+.modal-get-offer {
   z-index: 100;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1905,7 +1903,7 @@
   background-color: rgba(0, 0, 0, 0.6);
   align-items: center;
   justify-content: center;
-} */
+}
 
 .modal-get-offer .modal-title {
   font-size: 48px;
