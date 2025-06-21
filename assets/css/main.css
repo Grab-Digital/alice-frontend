@@ -1364,8 +1364,13 @@
 }
 .projects__cards-item-img {
   width: 100%;
-  max-height: 720px;
+  height: 592px;
   object-fit: cover;
+}
+@media (max-width: 991px) {
+  .projects__cards-item-img {
+    height: 100%;
+  }
 }
 .projects__cards-item--hidden {
   display: none !important; /* На этот раз !important оправдан */
