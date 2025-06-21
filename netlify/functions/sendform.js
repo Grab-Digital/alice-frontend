@@ -1,52 +1,44 @@
-const fetch = require("node-fetch");
+import fetch from "node-fetch";
 
-exports.handler = async function (event) {
-  if (event.httpMethod !== "POST") {
-    return {
-      statusCode: 405,
-      body: JSON.stringify({ message: "Method Not Allowed" }),
-    };
-  }
-
-  const { name, tel } = JSON.parse(event.body || "{}");
-
-  // 💬 Спрячь токен и chat_id в Netlify ENV
+export async function handler(event, context) {
   const TELEGRAM_TOKEN = process.env.TELEGRAM_TOKEN;
-  const CHAT_ID = process.env.TELEGRAM_CHAT_ID;
+  const TELEGRAM_CHAT_ID = process.env.TELEGRAM_CHAT_ID;
 
-  if (!TELEGRAM_TOKEN || !CHAT_ID) {
-    return {
-      statusCode: 500,
-      body: JSON.stringify({ message: "Missing Telegram credentials" }),
-    };
+  const body = JSON.parse(event.body);
+
+  let message = "💌 Новая заявка:\n";
+  for (let key in body) {
+    message += `• <b>${key}:</b> ${body[key]}\n`;
   }
 
-  const message = `💬 Новая заявка с сайта:\n\n👤 Имя: ${name}\n📞 Телефон: ${tel}`;
-
-  const telegramUrl = `https://api.telegram.org/bot${TELEGRAM_TOKEN}/sendMessage`;
+  const url = `https://api.telegram.org/bot${TELEGRAM_TOKEN}/sendMessage`;
 
   try {
-    const res = await fetch(telegramUrl, {
+    const response = await fetch(url, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        chat_id: CHAT_ID,
+        chat_id: TELEGRAM_CHAT_ID,
         text: message,
+        parse_mode: "HTML",
       }),
     });
 
-    if (!res.ok) {
-      throw new Error("Telegram API error");
+    if (response.ok) {
+      return {
+        statusCode: 200,
+        body: JSON.stringify({ message: "Success" }),
+      };
+    } else {
+      return {
+        statusCode: 500,
+        body: JSON.stringify({ message: "Telegram error" }),
+      };
     }
-
-    return {
-      statusCode: 200,
-      body: JSON.stringify({ success: true }),
-    };
-  } catch (error) {
+  } catch (err) {
     return {
       statusCode: 500,
-      body: JSON.stringify({ message: "Error sending message" }),
+      body: JSON.stringify({ message: "Fetch error", error: err.toString() }),
     };
   }
-};
+}
