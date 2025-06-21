@@ -948,9 +948,11 @@
   .home__benefits-pages-item {
     border: 1px solid #9caeff;
     border-radius: 130px;
-    font-size: 11px;
+    font-size: 10px;
     padding: 8px;
     font-weight: 300;
+    text-align: center;
+    width: 100%;
   }
   .home__box {
     margin-top: 116px;
@@ -1296,7 +1298,7 @@
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: end;
-  padding-bottom: 7px;
+  padding-bottom: 0px;
   border-bottom: 1px solid #6c6c6c;
 }
 .projects__tabs-item {
