@@ -139,6 +139,9 @@ window.addEventListener("DOMContentLoaded", () => {
           }
         }
 
+        // Добавим URL текущей страницы вручную
+        data.url = window.location.href;
+
         try {
           const response = await fetch("/.netlify/functions/sendForm", {
             method: "POST",
@@ -147,6 +150,9 @@ window.addEventListener("DOMContentLoaded", () => {
             },
             body: JSON.stringify(data),
           });
+
+          // Скрыть текущую модалку (если она есть)
+          form.closest("[data-modal]")?.classList.add("hidden");
 
           if (response.ok) {
             form.reset();
@@ -162,9 +168,9 @@ window.addEventListener("DOMContentLoaded", () => {
     });
 
     function showModal(selector) {
-      document
-        .querySelectorAll("[data-modal]")
-        .forEach((el) => el.classList.add("hidden"));
+      document.querySelectorAll("[data-modal]").forEach((el) => {
+        el.classList.add("hidden");
+      });
 
       document.querySelector(selector)?.classList.remove("hidden");
 
