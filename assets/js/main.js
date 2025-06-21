@@ -157,8 +157,10 @@ window.addEventListener("DOMContentLoaded", () => {
 
           if (response.ok) {
             form.reset();
+            Fancybox.close();
             showModal("#modal-thanks");
           } else {
+            Fancybox.close();
             showModal("#modal-error");
           }
         } catch (error) {

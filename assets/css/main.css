@@ -1938,6 +1938,7 @@
   -ms-flex-direction: column;
   flex-direction: column;
   padding: 48px 28px 22px 76px;
+  text-align: left;
 }
 
 .modal-project {
