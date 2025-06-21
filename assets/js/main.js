@@ -8,6 +8,7 @@ window.addEventListener("DOMContentLoaded", () => {
   initProfitsSwiper();
   AOS.init();
   initStrapi();
+  sendForm();
 
   function initStrapi() {
     fetch("https://alice-backend-oog7.onrender.com/api/works?populate=*")
@@ -121,6 +122,55 @@ window.addEventListener("DOMContentLoaded", () => {
         li.textContent = item;
         structureList.appendChild(li);
       });
+    }
+  }
+
+  function sendForm() {
+    document.querySelectorAll("form").forEach((form) => {
+      form.addEventListener("submit", async function (e) {
+        e.preventDefault();
+
+        const formData = new FormData(form);
+        const data = {};
+
+        for (let [name, value] of formData.entries()) {
+          if (value.trim() !== "") {
+            data[name] = value;
+          }
+        }
+
+        try {
+          const response = await fetch("/.netlify/functions/sendForm", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(data),
+          });
+
+          if (response.ok) {
+            form.reset();
+            showModal("#modal-thanks");
+          } else {
+            showModal("#modal-error");
+          }
+        } catch (error) {
+          console.error("Ошибка отправки:", error);
+          showModal("#modal-error");
+        }
+      });
+    });
+
+    function showModal(selector) {
+      document
+        .querySelectorAll("[data-modal]")
+        .forEach((el) => el.classList.add("hidden"));
+
+      document.querySelector(selector)?.classList.remove("hidden");
+
+      setTimeout(() => {
+        document.querySelector(selector)?.classList.add("hidden");
+      }, 5000);
     }
   }
 
