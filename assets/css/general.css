@@ -37,9 +37,9 @@ button {
 .js-scroll {
   background: rgba(34, 34, 34, 0.6549019608);
   -webkit-box-shadow: 0 0 36px rgba(0, 0, 0, 0.6117647059);
-          box-shadow: 0 0 36px rgba(0, 0, 0, 0.6117647059);
+  box-shadow: 0 0 36px rgba(0, 0, 0, 0.6117647059);
   -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   /* border-bottom: 1px solid #FFFFFF3D; */
 }
 
@@ -51,7 +51,7 @@ button {
 
 .blur {
   -webkit-filter: blur(4px);
-          filter: blur(4px);
+  filter: blur(4px);
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
