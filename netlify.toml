@@ -1,7 +1,7 @@
 # netlify.toml
 
 [build]
-  publish = "dist" # ← замени на папку, где у тебя собран сайт (например, "build" или "public")
+  publish = "." # ← замени на папку, где у тебя собран сайт (например, "build" или "public")
   functions = "netlify/functions"
 
 [[redirects]]
