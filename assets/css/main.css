@@ -704,7 +704,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 36px;
+  justify-content: space-between;
 }
 .home__benefits-contacts-item span {
   font-size: 16px;
