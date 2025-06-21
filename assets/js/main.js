@@ -30,7 +30,7 @@ window.addEventListener("DOMContentLoaded", () => {
           const tag = workData.tag || "Проект";
 
           const imageUrl = workData.image?.url
-            ? `https://alice-backend-oog7.onrender.com${workData.image.url}`
+            ? workData.image.url
             : "./assets/img/projects-img.png";
 
           const task = workData.task || "";
