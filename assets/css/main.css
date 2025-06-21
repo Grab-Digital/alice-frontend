@@ -1730,10 +1730,10 @@
   z-index: 1000;
   width: 100vw;
   height: 100vh;
-  display: none; /* скрываем по умолчанию */
+  display: none;
   align-items: center;
   justify-content: center;
-  background: rgba(0, 0, 0, 0.6); /* затемнение */
+  background: rgba(0, 0, 0, 0.6);
 }
 
 [data-modal].hidden {
@@ -1742,6 +1742,20 @@
 
 [data-modal]:not(.hidden) {
   display: flex;
+}
+
+.modal-get-offer,
+.modal-thanks {
+  position: relative; /* фикс для вложенных окон */
+  z-index: 1001;
+  max-width: 600px;
+  width: 100%;
+  padding: 2rem;
+  background: #fff;
+  color: #000;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 @media (max-width: 991px) {
@@ -1866,8 +1880,7 @@
   --f-button-height: 50px;
 }
 
-.modal-get-offer {
-  /* position: absolute; */
+/* .modal-get-offer {
   z-index: 100;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1887,10 +1900,10 @@
   right: 0;
   bottom: 0;
   z-index: 999;
-  background-color: rgba(0, 0, 0, 0.6); /* затемнение */
+  background-color: rgba(0, 0, 0, 0.6);
   align-items: center;
   justify-content: center;
-}
+} */
 
 .modal-get-offer .modal-title {
   font-size: 48px;

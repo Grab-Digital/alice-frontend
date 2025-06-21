@@ -139,21 +139,21 @@ window.addEventListener("DOMContentLoaded", () => {
           }
         }
 
-        // Добавим URL вручную
+        // Добавим URL страницы
         data.url = window.location.href;
 
         try {
           const response = await fetch("/.netlify/functions/sendForm", {
             method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
+            headers: { "Content-Type": "application/json" },
             body: JSON.stringify(data),
           });
 
-          // Скрываем текущую открытую модалку
           const currentModal = form.closest("[data-modal]");
-          if (currentModal) currentModal.classList.add("hidden");
+
+          if (currentModal) {
+            currentModal.classList.add("hidden");
+          }
 
           if (response.ok) {
             form.reset();
@@ -174,7 +174,11 @@ window.addEventListener("DOMContentLoaded", () => {
       });
 
       const modal = document.querySelector(selector);
-      if (modal) modal.classList.remove("hidden");
+      if (modal) {
+        modal.classList.remove("hidden");
+
+        modal.scrollIntoView({ behavior: "smooth", block: "center" });
+      }
 
       setTimeout(() => {
         modal?.classList.add("hidden");
