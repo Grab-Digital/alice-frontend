@@ -11,7 +11,7 @@ window.addEventListener("DOMContentLoaded", () => {
   sendForm();
 
   function initStrapi() {
-    fetch("http://79.174.81.12:1337/api/works?populate=*")
+    fetch("https://api.alice-baturova.ru/api/works?populate=*")
       .then((response) => response.json())
       .then((data) => {
         if (!data.data || data.data.length === 0) {
