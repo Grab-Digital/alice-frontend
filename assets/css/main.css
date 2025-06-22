@@ -1745,8 +1745,15 @@
 
 [data-modal]:not(.hidden) {
   display: flex;
-  transform: translate(100%, 100%);
   transition: 0.5s ease all;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin-inline: auto;
+  margin-block: auto;
+  width: fit-content;
+  height: fit-content;
 }
 
 .modal-get-offer,
