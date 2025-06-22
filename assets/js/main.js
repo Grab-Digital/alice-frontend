@@ -106,7 +106,7 @@ window.addEventListener("DOMContentLoaded", () => {
     modal.querySelector(".modal-title").textContent = data.title;
     modal.querySelector(".short-desc").textContent = data.description;
     modal.querySelector(".task").textContent = data.task;
-    modal.querySelector(".solution").textContent = data.solution;
+    modal.querySelector(".solution").innerHTML = data.solution;
     modal.querySelector(".result").textContent = data.result;
     modal.querySelector(".modal-link").href = data.behanceLink;
 
